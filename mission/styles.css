@@ -1,0 +1,36 @@
+body {
+    font-size: 20px;
+    line-height: 1.5;
+}
+header {
+    border-bottom: black 1px solid;
+}
+.content {
+    max-width: 600px;
+    text-align: center;
+    margin: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    border: black 1px solid;
+}
+.content p {
+    text-align: left;
+}
+ol {
+    text-align: left;
+}
+ol li {
+    margin-bottom: 3%;
+}
+h5 {
+    color: #006EB6;
+}
+h1, h5 {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+img {
+    width: 150px;
+}

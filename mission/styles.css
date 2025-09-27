@@ -34,3 +34,16 @@ h1, h5 {
 img {
     width: 150px;
 }
+.dark {
+    background-color: #333;
+}
+.dark h5 {
+    color: #4F9ACF;
+}
+.dark .content {
+    border: white 1px solid;
+    color: white;
+}
+.dark header {
+    border-bottom: white 1px solid;
+}

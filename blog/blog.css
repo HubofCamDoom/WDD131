@@ -1,0 +1,66 @@
+body {
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.title {
+    font-size: 4em;
+    text-align: center;
+}
+.book-title {
+    color: orangered;
+}
+nav {
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    font-size: 20px;
+    text-align: right;
+    max-width: 100%;
+    padding-right: 5%;
+    background-color: white;
+}
+.navbar {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style-type: none;
+    text-align: center;
+}
+.navbar li {
+    padding: 10px;
+    margin: 10px;
+}
+.navbar a {
+    text-decoration: none;
+    color: orange;
+}
+.navbar a:hover {
+    color: black;
+}
+.main-view {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.left {
+    justify-content: left;
+    justify-items: right;
+}
+.middle {
+    justify-content: center;
+    justify-items: left;
+}
+.right {
+    justify-content: right;
+    justify-items: left;
+}
+.left, .middle, .right {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border: 3px solid black;
+}
+.skiptocontent a {
+    position: absolute;
+    top: -40px;
+}
+.skiptocontent a:focus {
+    top: 0; 
+}

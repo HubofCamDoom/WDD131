@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=family=Amatic+SC&display=swap");
+ :root {
+ --primary-color: #1B98E0;
+ --secondary-color: #59c3c3;
+ --text-dark: #333;
+ --text-light: #ebebeb;
+ --primary-font: Arial, Helvetica,sans-serif;
+ --secondary-font: "Amatica SC";
+ }
+
+ body {
+    background-color: var(--text-light);
+    font-family: var(--primary-font);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#site-logo {
+    width: 60px;
+    margin-right: -10px;
+}
+header h1 {
+    font-family: var(--secondary-font);
+    font-size: 4em;
+    color: var(--text-dark);
+    margin: -10px 0 20px;
+    letter-spacing: 2px;
+}
+
+header form {
+    width: 100%;
+    display: flex;
+    border: 1px solid var(--text-dark);
+    border-radius: 5px;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+header form input[type="text"] {
+    flex-grow: 1;
+    border: none;
+    padding: 15px 15px;
+    font-size: 1em;
+    outline: none;
+}
+header form button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px 10px;
+    font-size: 1.2em;
+    max-width: 50px;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* MAIN */
+main {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+}
+.recipe-card {
+    border: 1px solid var(--text-dark);
+    border-radius: 5px;
+    max-width: 800px;
+    padding: 15px;
+    background-color: white;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: auto;
+}
+
+.recipe-card .tag {
+    align-self: flex-start;
+    background-color: white;
+    border: 1px solid var(--text-dark);
+    padding: 5px 10px;
+    margin-top: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+.recipe-card .recipe-name {
+    font-family: var(--secondary-font);
+    font-size: 2em;
+    color: var(--primary-color);
+    margin: 10px 0 5px;
+    text-align: left;
+    letter-spacing: 2px;
+}
+.recipe-card p {
+    display: none;
+}
+
+.rating {
+    font-size: 1.5em;
+    color: gold;
+    margin-bottom: 10px;
+}
+
+.icon-star-empty {
+    color: lightgray;
+}
+
+/* FOOTER */
+footer {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    font-size: 0.6em;
+    color: var(--text-dark);
+}
+
+footer .social {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+footer .social img {
+    width: 30px;
+    height: 30px;
+}
+
+footer a {
+    color: var(--text-dark);
+    text-decoration: none;
+}
+
+@media (min-width: 600px) {
+    main {
+        max-width: 800px;
+        padding: 0 40px;
+        flex-direction: row;
+    }
+    header {
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #site-logo {
+        order: 1; 
+        margin-right: -10px;
+    }
+
+    header h1 {
+        order: 2;
+        font-size: 5em; 
+        margin: 0 40px 0 0;
+        line-height: 1;
+    }
+    
+    header form {
+        order: 3;
+        max-width: 800px;
+        max-height: 50px;
+        margin-bottom: 0;
+    }
+
+    .recipe-card {
+        max-width: 450px;
+        padding: 25px;
+        flex-direction: row;
+    }
+    .recipe-card p {
+        display: block;
+    }
+    
+    .recipe-card .recipe-name {
+        font-size: 4em;
+    }
+}

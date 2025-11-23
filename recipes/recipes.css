@@ -19,7 +19,7 @@
 }
 
 img {
-	max-width: 100%;
+	max-width: 50%;
 }
 
 /* HEADER */
@@ -81,12 +81,12 @@ header form button {
 
 /* MAIN */
 main {
-    width: 100%;
     max-width: 800px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     padding: 0 20px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 .recipe-card {
     border: 1px solid var(--text-dark);
@@ -169,7 +169,8 @@ footer a {
     main {
         max-width: 800px;
         padding: 0 40px;
-        flex-direction: row;
+        flex-direction: center;
+        align-items: center;
     }
     header {
         align-items: center;
@@ -201,15 +202,16 @@ footer a {
     }
 
     .recipe-card {
-        max-width: 450px;
+        max-width: 800px;
         padding: 25px;
         flex-direction: row;
+        gap: 20px;
     }
     .recipe-card p {
         display: block;
     }
     
     .recipe-card .recipe-name {
-        font-size: 4em;
+        font-size: 2em;
     }
 }
